@@ -1,0 +1,16 @@
+extends ./../layout/main
+
+block content
+    div(class="class=col-xs-12 col-md-12")
+        h3(class="text-center") Registrar novo Usuario
+        form(action='/users', method='POST')
+            div(class="form-group")
+                input(type='text', name='name', placeholder="Digite o nome", class='form-control')
+            div(class="form-group")
+                input(type='text', name='username', placeholder="Digite o username", class='form-control')
+            div(class="form-group")
+                input(type='email', name='email', placeholder="Digite o email", class='form-control')
+            div(class="form-group")
+                input(type='password', name='password', placeholder="Digite o password", class='form-control')
+            div(class="form-group")
+                button(type='sunmit', class='btn btn-primary') Create
